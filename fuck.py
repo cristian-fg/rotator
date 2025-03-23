@@ -118,5 +118,10 @@ def move_resize_window(window_title, new_x, new_y, new_width, new_height):
 if __name__ == "__main__":
     # Set position to (100, 200) pixels from top-left corner
     rotator = DxWindowRotator("AdvantageScope", pos_x=0, pos_y=int(full_height / 4))
-    move_resize_window("AdvantageScope", 900, 400, 1800, 1200) 
+    move_resize_window("AdvantageScope",
+                        int(full_width / 2.84),
+                        int(full_height/ 4),
+                        int(full_width / 1.42),
+                        int(full_height / 1.33)
+                       )
     rotator.root.mainloop()
